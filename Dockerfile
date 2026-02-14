@@ -13,8 +13,8 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copia o csproj com o caminho correto
-COPY ["ApiUsuarioCurso/ApiUsuarioCurso.csproj", "ApiUsuarioCurso/"]
-RUN dotnet restore "ApiUsuarioCurso/ApiUsuarioCurso.csproj"
+COPY ["ApiUsuarioCursoPublicacaoVideo/ApiUsuarioCurso.csproj", "ApiUsuarioCurso/"]
+RUN dotnet restore "ApiUsuarioCursoPublicacaoVideo/ApiUsuarioCurso.csproj"
 
 # Copia o restante do código
 COPY . .
